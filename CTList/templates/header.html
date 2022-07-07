@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>WASD Gamers</title>
+		<style type="text/css">
+
+	a:link {color: #f4f67e; background-color: transparent; text-decoration: underline;}
+	a:active {color: #f4f67e; background-color: transparent; text-decoration: underline;}
+	a:visited {color: #f4f67e; background-color: transparent; text-decoration: underline;}
+	.grid-container {
+				display: grid;
+				grid-template-areas:
+					"area1 area1 area1"
+					"area2 area3 area4";
+
+
+				grid-gap: 5px;
+				padding: 5px;
+			}
+
+		.title{grid-area: area1; font-family: Helvetica; background-color: #f4f67e; padding: 10px; text-align: justify;}
+		.frstp{grid-area: area2; background-color: #000000; padding: 10px; text-align: justify;}
+		.scndp{grid-area: area3; background-color: #000000; padding: 10px; text-align: justify;}
+		.thrdp{grid-area: area4; background-color: #000000; padding: 10px; text-align: justify;}
+
+	.box {
+		width: 800px;
+		height: 300px;
+		margin: 50px auto;
+		background: #f4f67e;
+		position: relative;
+		border-radius: 3%;
+	}
+
+	.box2 {
+		width: 800px;
+		height: 300px;
+		margin: 100px auto;
+		background: #f4f67e;
+		position: relative;
+		border-radius: 3%;
+	}
+
+	</style>
+	</head>
+	<body bgcolor="#da76e6">
+		<div class="grid-container">
+			<div class="title">
+				<center><h1>WASD Gamers</h1></center>
+			</div>
+			<div class="frstp">
+				<center><a href="/">First Page</a></center>
+			</div>
+			<div class="scndp">
+				<center><a href="/secondpage">Second Page</a></center>
+			</div>
+			<div class="thrdp">
+				<center><a href="/thirdpage">Third Page</a></center>
+			</div>
+		</div>
+	{% block content %}
+
+	{% endblock %}
+	</body>
+</html>
